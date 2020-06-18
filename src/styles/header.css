@@ -1,0 +1,39 @@
+.header {
+  background: black;
+  margin-bottom: 1.45rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0.8rem 1.5875rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  border: 1px solid white;
+  padding: 10px;
+  background-color: dimgray;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.menulinks {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 50px;
+  padding-top: 30px;
+}
+
+.menulinks a {
+  color: white;
+  text-decoration: none;
+}
