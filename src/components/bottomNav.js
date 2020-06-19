@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     position: 'absolute',
     bottom: 0,
     display: "flex",
-    justifyContent: "space-around"
+    justifyContent: "space-between"
   },
 });
 

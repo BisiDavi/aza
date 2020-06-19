@@ -2,13 +2,16 @@ import React from 'react';
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import { useStaticQuery, graphql, Link } from "gatsby";
-import Img from "gatsby-image";
+// import Img from "gatsby-image";
 import '../styles/header.css';
 
 const useStyles = makeStyles({
-  logo: {
+  logoimg: {
     position: 'absolute',
     top: '30px'
+  },
+  siteTitle: {
+    position: 'relative',
   }
 });
 
@@ -16,7 +19,7 @@ const Logo = () => {
   const classes = useStyles();
   const data = useStaticQuery(graphql`
     query{
-      logoImage: file(relativePath:{eq:"money.jpg"}){
+      logoImage: file(relativePath:{eq:"money.png"}){
         childImageSharp{
           fluid(maxWidth:200){
             ...GatsbyImageSharpFluid
@@ -32,12 +35,14 @@ const Logo = () => {
   `)
   return (
     <div className="logo">
-      <h1>
-        <Link to="/">
-          {data.sitename.siteMetadata.title}
-        </Link>
-      </h1>
-      <Img className={classes.logo} fluid={data.logoImage.childImageSharp.fluid} />
+      <div className={classes.siteTitle}>
+        <h1>
+          <Link to="/">
+            {data.sitename.siteMetadata.title}
+          </Link>
+        </h1>
+      </div>
+      {/**<Img className={classes.logoimg} fluid={data.logoImage.childImageSharp.fluid} /> */}
     </div>
   )
 }

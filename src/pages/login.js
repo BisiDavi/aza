@@ -1,6 +1,7 @@
 import React from 'react';
 import { Paper, Typography, Grid, TextField, Avatar, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import FacebookIcon from '@material-ui/icons/Facebook';
 import { Link } from 'gatsby';
 
 const useStyles = makeStyles((theme) => ({
@@ -46,6 +47,10 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     color: 'white',
     fontWeight: 'bold',
+  },
+  login: {
+    textAlign: 'center',
+    padding: 20
   }
 }))
 
@@ -86,9 +91,9 @@ const Login = () => {
           </Button>
         </Grid>
         <Grid item>
-          <Typography>Login with</Typography>
+          <Typography className={classes.login}>Login with your social account</Typography>
           <div className="sociallogin">
-
+            <FacebookIcon />
           </div>
         </Grid>
       </Grid>

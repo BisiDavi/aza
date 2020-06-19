@@ -54,6 +54,10 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     padding: '10px 0px 0px 25px',
     height: '70px'
+  },
+  terms: {
+    textAlign: 'center',
+    padding: 20
   }
 }))
 
@@ -106,7 +110,7 @@ const Signup = () => {
            </Button>
           </Grid>
           <Grid item>
-            <Typography>Terms of Service</Typography>
+            <Typography className={classes.terms}>Terms of Service</Typography>
           </Grid>
         </Grid>
       </Paper>
