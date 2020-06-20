@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="layout">
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
        <BottomNav />
       </div>
-    </>
+    </div>
   )
 }
 

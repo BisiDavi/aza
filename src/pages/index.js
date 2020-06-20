@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Image, SEO, Typewrite } from '../components/imports';
+import { Layout, SEO, Typewrite, AzaTimeline, Autoslider } from '../components/imports';
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -19,12 +19,17 @@ const IndexPage = () => {
   const classes = useStyles()
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Home-- Get 50% ROI when you invest" />
+
       <div className={classes.banner}>
-        <Image />
+        <Autoslider/>
+        
       </div>
       <span className={classes.typewrite}>
         <Typewrite />
+      </span>
+      <span className={classes.timeline}>
+        <AzaTimeline />
       </span>
     </Layout >
   )

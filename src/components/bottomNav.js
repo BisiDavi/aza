@@ -11,7 +11,7 @@ import '../styles/bottomnav.css';
 const useStyles = makeStyles({
   root: {
     width: '100%',
-    position: 'absolute',
+    position: 'sticky !important',
     bottom: 0,
     display: "flex",
     justifyContent: "space-between"

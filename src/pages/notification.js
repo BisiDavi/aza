@@ -7,7 +7,7 @@ const Notification = () => {
     <Layout>
       <SEO title="get notified when you're merged" />
       <div className="notification container">
-        <h1>Notifications</h1>
+        <h1>Dashboard</h1>
       </div>
     </Layout>
   );

@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
-      width: '30ch',
+      width: '25ch',
       marginLeft: '35px'
     },
   },
@@ -22,7 +22,6 @@ const useStyles = makeStyles((theme) => ({
   signupHeader: {
     justifyContent: "space-around",
     padding: 20,
-    paddingBottom: '40px'
   },
   login: {
     paddingTop: 10,
@@ -37,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: 'linear-gradient( 136deg, rgb(242,113,33) 0%, rgb(233,64,87) 50%, rgb(138,35,135) 100%)'
   },
   avatarIcon: {
-    paddingBottom: 30
+    paddingBottom: 0
   },
   icon: {
     width: '60px !important',
@@ -90,8 +89,8 @@ const Signup = () => {
           </Grid>
           <Grid item>
             <form className={classes.root} noValidate autoComplete="off">
-              <TextField id="standard-basic" label="Phone Number" />
               <TextField id="standard-basic" label="Full Name" />
+              <TextField id="standard-basic" label="Phone Number" />
               <TextField
                 id="standard-password-input"
                 label="Password"

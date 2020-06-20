@@ -619,4 +619,7 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+  .layout {
+    position: relative;
+  }
 }
