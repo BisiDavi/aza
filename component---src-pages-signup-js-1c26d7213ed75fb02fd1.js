@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{Wwxz:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),c=t("FTXn");n.default=function(){return l.a.createElement(c.d,null,l.a.createElement(c.e,{title:"Home"}),l.a.createElement("div",{className:"signup"},l.a.createElement("h1",null,"I am the Signup page")))}}}]);
+//# sourceMappingURL=component---src-pages-signup-js-1c26d7213ed75fb02fd1.js.map
