@@ -1,0 +1,11 @@
+@media (max-width: 500px) {
+  .carousel.carousel-slider {
+    height: 180px !important;
+    margin-bottom: -50px;
+  }
+}
+
+.carousel.carousel-slider {
+  height: 400px;
+  margin: -20px 0px -10px 0px;
+}

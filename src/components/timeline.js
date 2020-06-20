@@ -26,7 +26,7 @@ const AzaTimeline = () => {
       <TimelineItem>
         <TimelineOppositeContent>
           <Typography variant="body2" color="textSecondary">
-            9:30 am
+            1.
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -46,9 +46,12 @@ const AzaTimeline = () => {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
-            10:00 am
-          </Typography>
+          <Paper elevation={3} className={classes.paper}>
+            <Typography variant="h6" component="h1">
+              Code
+            </Typography>
+            <Typography>Because it&apos;s awesome!</Typography>
+          </Paper>          
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="primary">
@@ -57,12 +60,9 @@ const AzaTimeline = () => {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              Code
-            </Typography>
-            <Typography>Because it&apos;s awesome!</Typography>
-          </Paper>
+          <Typography variant="body2" color="textSecondary">
+            2
+          </Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
