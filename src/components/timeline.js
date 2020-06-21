@@ -25,8 +25,8 @@ const AzaTimeline = () => {
     <Timeline align="alternate">
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
-            1.
+          <Typography variant="body2" component="h2" color="textSecondary">
+            1. Register and render an Assist 
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -38,9 +38,9 @@ const AzaTimeline = () => {
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
             <Typography variant="h6" component="h1">
-              Eat
+              Register - Assist
             </Typography>
-            <Typography>Because you need strength</Typography>
+            <Typography>Register on Aza.cash- Render help to a Community User.</Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
@@ -48,9 +48,9 @@ const AzaTimeline = () => {
         <TimelineOppositeContent>
           <Paper elevation={3} className={classes.paper}>
             <Typography variant="h6" component="h1">
-              Code
+              Get Aza 
             </Typography>
-            <Typography>Because it&apos;s awesome!</Typography>
+            <Typography></Typography>
           </Paper>          
         </TimelineOppositeContent>
         <TimelineSeparator>

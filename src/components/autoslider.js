@@ -1,13 +1,13 @@
 import React from "react";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Banner1, Banner2, Banner3, banner1, banner2, banner3 } from "./imports";
+import { Banner1, Banner2, Banner3 } from "./imports";
 import '../styles/carousel.css';
 
 class Autoslider extends React.Component {
   render() {
     return (
-      <Carousel autoPlay infiniteLoop showThumbs={false}>
+      <Carousel autoPlay infiniteLoop interval="4000" showThumbs={false}>
         <div>
           <Banner1 />
         </div>

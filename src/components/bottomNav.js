@@ -39,7 +39,7 @@ export default function BottomNav() {
       className={classes.root}
     >
       <LinkBottomNav linkto="/" linkLabel="Home" navIcon={<HomeIcon />} />
-      <LinkBottomNav linkto="/notification" linkLabel="Inbox" navIcon={<MailIcon />} />
+      <LinkBottomNav linkto="/dashboard" linkLabel="Inbox" navIcon={<MailIcon />} />
       <LinkBottomNav linkto="/contact" linkLabel="More Data" navIcon={<MoreVertIcon />} />
     </BottomNavigation>
   );

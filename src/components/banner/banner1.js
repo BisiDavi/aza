@@ -1,6 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import Img from "gatsby-image";
+import { Typography } from '@material-ui/core';
+import '../../styles/banner.css';
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -27,7 +29,18 @@ const Banner1 = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <div className="banner">
+      <span className="banner-text">
+        <Typography variant="h4">
+          Invest your Money Today
+      </Typography>
+      </span>
+      <span className="banner-img">
+        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+      </span>
+    </div>
+  )
 }
 
 export default Banner1;

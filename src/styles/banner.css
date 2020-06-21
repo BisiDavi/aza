@@ -1,0 +1,19 @@
+span.banner-text{
+  position: absolute;
+  z-index:200;
+  color:white;
+  font-weight: bold;
+  top:150px;
+  left:50px;
+}
+
+@media(max-width:500px){
+  span.banner-text{
+    top: 20px !important;
+    border: 1px solid white;
+    background:rgba(0,0,0,0.3); 
+    display:flex;   
+    margin: 0px 20px;
+    left:auto;
+  }
+}

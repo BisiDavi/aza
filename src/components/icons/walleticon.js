@@ -1,9 +1,6 @@
-import React from "react";
-import { Typography } from '@material-ui/core';
-import { useStaticQuery, graphql } from "gatsby";
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image";
-import '../../styles/banner.css';
-
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -17,13 +14,12 @@ import '../../styles/banner.css';
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-
-const Banner3 = () => {
+const WalletIcon = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "investment.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "wallet.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 30) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -31,18 +27,7 @@ const Banner3 = () => {
     }
   `)
 
-  return (
-    <div className="banner">
-      <span className="banner-text">
-        <Typography variant="h4">
-          Get 50% ROI in 7 days Subsequently
-        </Typography>
-      </span>
-      <span className="banner-img">
-        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-      </span>
-    </div>
-  )
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-export default Banner3;
+export default WalletIcon;

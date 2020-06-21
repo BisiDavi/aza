@@ -1,7 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
+import { Typography } from '@material-ui/core'
+import '../../styles/banner.css';
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
  * images with lazy loading and reduced file sizes. The image is loaded using a
@@ -27,7 +28,18 @@ const Banner2 = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <div className="banner">
+      <span className="banner-text">
+        <Typography variant="h4">
+          Earn your first 50% ROI after 3 days
+      </Typography>
+      </span>
+      <span className="banner-img">
+        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+      </span>
+    </div>
+  )
 }
 
 export default Banner2;
