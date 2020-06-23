@@ -1,8 +1,8 @@
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
   .MuiBottomNavigation-root.makeStyles-root-5 {
     display: none;
   }
-}
+} */
 
 @media (max-width: 450px) {
   .menulinks {
@@ -11,4 +11,8 @@
   .MuiSvgIcon-root {
     font-size: 2.5rem !important;
   }
+}
+
+.jss3 {
+  display: none;
 }

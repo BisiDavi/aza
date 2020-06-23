@@ -6,10 +6,13 @@ import '../styles/dashboardcard.css';
 
 const useStyles = makeStyles({
   card: {
-    backgroundColor: 'rgba(0,0,0,0.4)'
+    backgroundColor: 'white'
   },
   media: {
     height: '150px !important'
+  },
+  cardlink: {
+    textAlign: 'center'
   }
 });
 
@@ -27,7 +30,7 @@ const DashboardCard = (props) => {
           </span>
         </CardMedia>
         <CardContent>
-          <Typography>
+          <Typography color="primary" className={classes.cardlink}>
             {props.name}
           </Typography>
         </CardContent>

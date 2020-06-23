@@ -12,6 +12,7 @@ export { default as Banner1 } from './banner/banner1';
 export { default as Banner2 } from './banner/banner2';
 export { default as Banner3 } from './banner/banner3';
 export { default as DashboardCard } from './dashboardCard';
+export { default as DashboardPaper } from './dashboardPaper';
 
 export { default as MaleIcon } from './icons/maleicon'
 export { default as FemaleIcon } from './icons/femaleicon'

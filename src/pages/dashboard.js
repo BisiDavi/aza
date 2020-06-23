@@ -1,6 +1,9 @@
 import React from 'react';
-import { Layout, SEO, DashboardCard, WalletIcon, MaleIcon, PayfundsIcon, FemaleIcon } from '../components/imports';
-import { Grid } from '@material-ui/core';
+import {
+  Layout, SEO, WalletIcon, MaleIcon,
+  PayfundsIcon, FemaleIcon, DashboardPaper
+} from '../components/imports';
+import { Grid, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -16,12 +19,18 @@ const useStyles = makeStyles({
     borderTopLeftRadius: '20px'
   },
   lowerSection: {
-    backgroundColor: 'rgba(0,0,0,0.2)',
+    backgroundColor: 'rgba(0,0,0,0.1)',
     display: 'grid',
     height: '65vh',
-    gridTemplateColumns: 'repeat(2, 2fr)',
-    gridGap: '10px',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    marginTop: '-75px',
+    gridGap: '20px',
     padding: '20px',
+  },
+  dashboardtext: {
+    textAlign: 'center',
+    color: 'black',
+    marginTop: '-20px',
   }
 })
 const Dashboard = () => {
@@ -30,19 +39,19 @@ const Dashboard = () => {
     <Layout>
       <SEO title="get notified when you're merged" />
       <div className="notification">
+        <Typography variant="h4" className={classes.dashboardtext}>Dashboard</Typography>
         <Grid container direction="column">
           <Grid item>
             <div className={classes.upperSection}>
-              <h4>Dashboard</h4>
 
             </div>
           </Grid>
           <Grid item>
             <div className={classes.lowerSection}>
-              <DashboardCard name="Wallet" icon={<WalletIcon />} />
-              <DashboardCard name="Pay Funds" icon={<PayfundsIcon />} />
-              <DashboardCard name="Profile" icon={<MaleIcon />} />
-              <DashboardCard name="News" icon={<FemaleIcon />} />
+              <DashboardPaper name="Wallet" icon={<WalletIcon />} />
+              <DashboardPaper name="Pay Funds" icon={<PayfundsIcon />} />
+              <DashboardPaper name="Profile" icon={<MaleIcon />} />
+              <DashboardPaper name="News" icon={<FemaleIcon />} />
             </div>
           </Grid>
         </Grid>

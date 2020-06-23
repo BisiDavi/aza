@@ -6,10 +6,6 @@ import { useStaticQuery, graphql, Link } from "gatsby";
 import '../styles/header.css';
 
 const useStyles = makeStyles({
-  logoimg: {
-    position: 'absolute',
-    top: '30px'
-  },
   siteTitle: {
     position: 'relative',
   }
